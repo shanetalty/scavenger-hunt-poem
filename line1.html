@@ -19,16 +19,24 @@
     }
     .fade-in {
       opacity: 0;
-      animation: fadeInAnimation 2s ease forwards;
+      animation: fadeInAnimation 4s ease forwards;
     }
     @keyframes fadeInAnimation {
       to {
         opacity: 1;
       }
     }
+    /* Additional styles for mobile */
+    @media (max-width: 600px) {
+      body {
+        align-items: flex-start;
+        padding: 10px;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="fade-in">In the eerie circus grounds, the hunt begins to entice,</div>
+  <div class="fade-in">In a dark circus ring, the show begins,</div>
 </body>
 </html>
+
