@@ -10,7 +10,9 @@
       font-family: 'Jim Nightshade', cursive;
       font-size: 24px;
       line-height: 1.6;
-      background-color: #f0f0f0;
+      background-color: black;
+      background-image: url('https://st2.depositphotos.com/8107280/11512/v/950/depositphotos_115126406-stock-illustration-distressed-texture-distressed-background-grunge.jpg'); /* Replace with your texture image */
+      background-repeat: repeat;
       margin: 0;
       display: flex;
       height: 100vh;
@@ -26,17 +28,18 @@
         opacity: 1;
       }
     }
-    /* Additional styles for mobile */
     @media (max-width: 600px) {
       body {
-        align-items: flex-start;
-        padding: 10px;
+        justify-content: flex-start;
+        padding: 40px;
+        text-align: center;
       }
     }
   </style>
 </head>
 <body>
-  <div class="fade-in">In a dark circus ring, the show begins,</div>
+  <div class="fade-in" style="animation: fadeInAnimation 10s ease forwards; animation-delay: 0.5s;">In a dark circus ring, the show begins,</div>
 </body>
 </html>
+
 
