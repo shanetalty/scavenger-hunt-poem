@@ -17,20 +17,25 @@
       height: 100vh;
       align-items: center;
       justify-content: center;
+      overflow: hidden; /* Hide scroll bar */
     }
     .fade-in {
       opacity: 0;
-      animation: fadeInAnimation 10s ease-in-out forwards;
+      animation: fadeInAnimation 2s ease-in-out forwards;
       animation-delay: 0.5s;
+      white-space: nowrap; /* Prevent line break */
     }
     @keyframes fadeInAnimation {
+      from {
+        transform: translateX(-100%); /* Start from the left */
+      }
       to {
         opacity: 1;
+        transform: translateX(0); /* Fade in from left to right */
       }
     }
     @media (max-width: 768px) {
       body {
-        justify-content: flex-start;
         padding: 20px;
         text-align: center;
       }
@@ -41,5 +46,3 @@
   <div class="fade-in">In a dark circus ring, the show begins,</div>
 </body>
 </html>
-
-
