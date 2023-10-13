@@ -5,46 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Poem Page 1</title>
   <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
-  <style>
+<style>
+  body {
+    font-family: 'Jim Nightshade', cursive;
+    font-size: 24px;
+    line-height: 1.6;
+    background-color: #000;
+    color: #f7f3eb;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Hide scroll bar */
+  }
+  .fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 5s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .center-text {
+    text-align: center;
+  }
+  @keyframes fadeInAnimation {
+    to {
+      opacity: 1;
+    }
+  }
+  @media (max-width: 768px) {
     body {
-      font-family: 'Jim Nightshade', cursive;
-      font-size: 24px;
-      line-height: 1.6;
-      background-color: #000;
-      color: #f7f3eb;
-      margin: 0;
-      display: flex;
-      height: 100vh;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden; /* Hide scroll bar */
+      padding: 20px;
+      text-align: center;
     }
-    .fade-in {
-      opacity: 0;
-      animation: fadeInAnimation 5s ease-in-out forwards;
-      animation-delay: 0.5s;
-    }
-    @keyframes fadeInAnimation {
-      to {
-        opacity: 1;
-      }
-    }
-    @media (max-width: 768px) {
-      body {
-        padding: 20px;
-        text-align: center;
-      }
-    }
-  </style>
-</head>
+  }
+</style>
 <body>
-  <div class="fade-in">
-    <div style="font-family: 'Jim Nightshade', cursive; font-size: 24px; line-height: 1.6; text-align: center;">
-      Mirror's gaze, a realm abides...
-    </div>
-    <div style="font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 1.4; text-align: center;">
-      (Remember this! Make a note (Screenshot, write down, memorise..) of these lines and read all 4 out to the prize distributor at the end to receive your prize)
-    </div>
+  <div class="fade-in center-text" style="font-size: 36px;">
+    Mirror's gaze, a realm abides...
+  </div>
+  <div class="fade-in center-text" style="font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 1.4;">
+    A second line of your poem...
   </div>
 </body>
 </html>
