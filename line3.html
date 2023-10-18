@@ -6,11 +6,6 @@
   <title>Poem Page 1</title>
   <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
   <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
     body {
       font-family: 'Jim Nightshade', cursive;
       font-size: 24px;
@@ -19,7 +14,7 @@
       color: #f7f3eb;
       margin: 0;
       display: flex;
-      min-height: 100%;
+      min-height: 100vh;
       align-items: center;
       justify-content: center;
       overflow: hidden;
@@ -37,7 +32,7 @@
       font-size: 18px;
       line-height: 1.4;
       color: #fff;
-      margin-top: 10px; /* Add some spacing between the two text elements */
+      margin-top: 10px;
     }
     @keyframes fadeInAnimation {
       to {
@@ -47,7 +42,6 @@
     @media (max-width: 768px) {
       body {
         padding: 20px;
-        text-align: center;
       }
     }
   </style>
@@ -57,12 +51,12 @@
     <div style="font-size: 36px; font-weight: bold; margin-bottom: 20px;">
       Mirror's gaze, a realm abides...
     </div>
-    <div style="font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 1.4; color: #fff; margin-top: 10px;">
+    <div class="secondary-text">
       Remember each line of the poem to get your prize!
     </div>
-    <div style="font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 1.4; color: #fff; margin-top: 10px;">
-      Screenshot, write them down, your choice..
-    </div>    
+    <div class="secondary-text">
+      Screenshot or write them down, your choice...
+    </div>
   </div>
 </body>
 </html>
