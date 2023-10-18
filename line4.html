@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Poem Page 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Clown</title>
   <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
   <style>
     body {
@@ -14,15 +14,25 @@
       color: #f7f3eb;
       margin: 0;
       display: flex;
-      height: 100vh;
+      min-height: 100vh;
       align-items: center;
       justify-content: center;
-      overflow: hidden; /* Hide scroll bar */
+      overflow: hidden;
     }
     .fade-in {
       opacity: 0;
       animation: fadeInAnimation 5s ease-in-out forwards;
       animation-delay: 0.5s;
+    }
+    .center-text {
+      text-align: center;
+    }
+    .secondary-text {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      line-height: 1.4;
+      color: #fff;
+      margin-top: 10px;
     }
     @keyframes fadeInAnimation {
       to {
@@ -32,12 +42,21 @@
     @media (max-width: 768px) {
       body {
         padding: 20px;
-        text-align: center;
       }
     }
   </style>
 </head>
 <body>
-  <div class="fade-in">Puppet's dance, a tale subsides...</div>
+  <div class="fade-in center-text">
+    <div style="font-size: 36px; font-weight: bold; margin-bottom: 20px;">
+      Puppet's dance, a tale subsides...
+    </div>
+    <div class="secondary-text">
+      Remember each line of the poem to get your prize!
+    </div>
+    <div class="secondary-text">
+      Screenshot or write them down, your choice...
+    </div>
+  </div>
 </body>
 </html>
