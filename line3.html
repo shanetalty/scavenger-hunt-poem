@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Poem Page 1</title>
   <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
 <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
   body {
     font-family: 'Jim Nightshade', cursive;
     font-size: 24px;
@@ -14,7 +19,7 @@
     color: #f7f3eb;
     margin: 0;
     display: flex;
-    height: 100vh;
+    min-height: 100%; /* Use min-height instead of height */
     align-items: center;
     justify-content: center;
     overflow: hidden; /* Hide scroll bar */
@@ -45,7 +50,10 @@
       Mirror's gaze, a realm abides...
     </div>
     <div style="font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 1.4;">
-      Remember each line of the poem to get your prize! Screenshot, write them down, your choice..
+      Remember each line of the poem to get your prize! 
+    </div>
+    <div style="font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 1.4;">
+      Screenshot, write them down, your choice..
     </div>
   </div>
 </body>
