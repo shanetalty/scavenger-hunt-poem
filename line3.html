@@ -5,55 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Poem Page 1</title>
   <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
-<style>
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    font-family: 'Jim Nightshade', cursive;
-    font-size: 24px;
-    line-height: 1.6;
-    background-color: #000;
-    color: #f7f3eb;
-    margin: 0;
-    display: flex;
-    min-height: 100%; /* Use min-height instead of height */
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; /* Hide scroll bar */
-  }
-  .fade-in {
-    opacity: 0;
-    animation: fadeInAnimation 5s ease-in-out forwards;
-    animation-delay: 0.5s;
-  }
-  .center-text {
-    text-align: center;
-  }
-  @keyframes fadeInAnimation {
-    to {
-      opacity: 1;
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
     }
-  }
-  @media (max-width: 768px) {
     body {
-      padding: 20px;
+      font-family: 'Jim Nightshade', cursive;
+      font-size: 24px;
+      line-height: 1.6;
+      background-color: #000;
+      color: #f7f3eb;
+      margin: 0;
+      display: flex;
+      min-height: 100%;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .fade-in {
+      opacity: 0;
+      animation: fadeInAnimation 5s ease-in-out forwards;
+      animation-delay: 0.5s;
+    }
+    .center-text {
       text-align: center;
     }
-  }
-</style>
+    .roboto-text {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      line-height: 1.4;
+      color: #fff; /* Set the text color to white */
+    }
+    @keyframes fadeInAnimation {
+      to {
+        opacity: 1;
+      }
+    }
+    @media (max-width: 768px) {
+      body {
+        padding: 20px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
 <body>
   <div class="fade-in center-text">
     <div style="font-size: 36px;">
       Mirror's gaze, a realm abides...
     </div>
-    <div style="font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 1.4;">
-      Remember each line of the poem to get your prize! 
-    </div>
-    <div style="font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 1.4;">
-      Screenshot, write them down, your choice..
+    <div class="roboto-text"> <!-- Apply the 'roboto-text' class here -->
+      Remember each line of the poem to get your prize! Screenshot, write them down, your choice..
     </div>
   </div>
 </body>
